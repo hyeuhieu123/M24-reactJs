@@ -4,7 +4,6 @@ import Home from "./components/B1+2/Home";
 import Contact from "./components/B1+2/Contact";
 import Main from "./components/B1+2/Main";
 import "./components/scss/navbar.scss";
-import "./components/scss/variable.scss";
 
 export default function App() {
   return (
