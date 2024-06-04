@@ -1,0 +1,9 @@
+a {
+    padding: 5px;
+    margin: 20px;
+}
+.active {
+    background-color: blue;
+    color: white; 
+    font-weight: 700; 
+}
