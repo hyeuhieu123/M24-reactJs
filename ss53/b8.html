@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function findItem(arr, number, callback) {
+        let found = false;
+        for (let i = 0; i < arr.length; i++) {
+          if (arr[i] === number) {
+            found = true;
+            break;
+          }
+        }
+        callback(number, found);
+      }
+
+      findItem([1, 2, 3, 4, 5], 6, (num, status) => {
+        if (status === false) {
+          console.log(null);
+        } else {
+          console.log(num);
+        }
+      });
+    </script>
+  </body>
+</html>

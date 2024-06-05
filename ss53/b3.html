@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function arrNumber(arr, callback) {
+        arr.forEach((element, index) => {
+          setTimeout(() => {
+            callback(element, index);
+          }, 1000);
+        });
+      }
+      arrNumber([1, 2, 3, 4, 5], (element, index) => {
+        console.log(`Phần tử thứ ${index + 1}: ${element}`);
+      });
+    </script>
+  </body>
+</html>

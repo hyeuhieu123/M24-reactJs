@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function myArr(arr, callback) {
+        for (let i = 0; i < arr.length; i++) {
+          setTimeout(() => {
+            callback(i, arr[i], arr);
+          }, 1000);
+        }
+      }
+      myArr([1, 2, 3, 4, 5, 6], (index, value, arr) => {
+        console.log(`Vị trí:${index}|Giá trị: ${value}|Mảng: ${arr} `);
+      });
+    </script>
+  </body>
+</html>
