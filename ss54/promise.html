@@ -7,43 +7,77 @@
   </head>
   <body>
     <!-- 
-		1. callback
-		là hàm được truyền vào làm đối số của hàm khác
-		-khi nhiều hàm lồng vào nhau thì dẫn tới tình trạng callback-hell
-		2. promise sinh ra ở phiên bản es6(2015) để xử lý các tác vụ bất đồng bộ.
-		-khi gặp các code dạng callback-hell khi xử lý với promise code nhìn gọn gàng hơn, dễ maintain
+        Promise: sinh ra ở phiên bản es6 để xử lý các tác vụ bất đồng bộ
+        - khi gặp các code ở dàng callback-hell khi bị xử lý với promise nhìn gọn gàng hơn
+        CÁCH DÙNG PROMISE 
+        1. khởi tạo hàm promise băng new Promise();
+        2. bên trong hàm tạo contructor obj nhận vào 1 đối số là 1 function
+        trong function này nhận vào 2 tham số( resolve,reject)
+        + khi logic code thành công thì gọi resolve
+        + khi logic code thất bại thì gọi reject
+        3.Promise
+        + .then ((data=>{cosole.log(data)}));
+        + .catch ((error=>{cosole.log(error)}));
+        Khi trong promise có rất nhiều then thì tham số của then thì tham số của then sau sẽ nhận kết quả trả về(return của then trước nó) của hàm then trước
+     -->
+    <script>
+      // setTimeout(()=>{
+      //     console.log('viec 1');
+      //     //sau khi viec 1 lam xong thi viec 2 can ket qua viec 1
+      //     setTimeout(()=>{
+      //         console.log('viec 2');
+      //         setTimeout(()=>{
+      //             console.log('viec 3');
+      //         },1000);
+      //     },1000)
+      // },1000)
+      let promise = new Promise((resolve, reject) => {
+        //resolve : giải quyết, thành công
+        //reject : từ chối, thất bại
+        // viết các logic code
+        //nếu thành công thì gọi resolve
+        //nếu thất bại thì gọi reject
+        resolve([1, 2, 3]);
+        // reject('co loi');
+      });
+      promise.then((data1) => {
+        console.log("data1", data1);
+        return [1];
+      });
+      // .then(data2=>{
+      //     console.log('data2',data2);
+      // })
+      // .catch(error=>{
+      //     console.log('1111',error);
+      // })
+      let promise1 = new Promise((resolve, reject) => {
+        resolve("11111");
+      });
+      promise1
+        .then((data1) => {
+          return new Promise((resolve, reject) => {
+            setTimeout(() => {
+              console.log("111");
+              resolve();
+            }, 1000);
+          });
+        })
 
-		cách dùng promise 
-		1. khời tọa promise bằng new Promise():
-		2. bên trong cái hàm tạo constructor object nhận vào 1 cái tham số là một cái function 
-		trong cái function này nhận vào 2 tham số (resolve,reject)
-		khi logic code thành công thì gọi resolve 
-		khi thất bại thì gọi reject
-		3.preomise
-			.then((dâta)==>console.log(data))
-			.catch((error)==> console.log(err))
-		khi trong promise có rất nhiều then thì tham số của then sau sẽ nhận kết quả trả về của hàm then trước 
-		3.asyn-await
-
-	 --></body>
-  <script>
-    // setTimeout(() => {
-    //   console.log("việc 1 ");
-    //   //sau khi việc 1 làm xong, việc thứ 2 cần kết quả của việc 1
-    //   setTimeout(() => {
-    //     console.log("thực hiện việc 2");
-    //   }, 1000);
-    // }, 1000);
-    let promise = new Promise((resolve, reject) => {
-      //nếu nhu thành công thì gọi resolve
-      //nếu như thất bại thfi gọi reject
-      resolver([1, 2, 3]);
-
-      // resolve:giải quyết
-      //reject từ chối thất bại
-      // viết các logic code
-      // nếu như thành công thì gọi resolve.
-      console.log(promise);
-    });
-  </script>
+        .then((data2) => {
+          return new Promise((resolve, reject) => {
+            setTimeout(() => {
+              console.log("2222");
+              resolve();
+            }, 1000);
+          });
+        })
+        .then((data3) => {
+          return new Promise((resolve, reject) => {
+            setTimeout(() => {
+              console.log("3333");
+            }, 1000);
+          });
+        });
+    </script>
+  </body>
 </html>
