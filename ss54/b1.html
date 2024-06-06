@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let value;
+      function calculateBMI(weight, height) {
+        try {
+          if (typeof wight === "number" && wight > 0 && height > 0) {
+            console.log(weight * height);
+          } else {
+            console.log("Cân nặng không hợp lệ");
+          }
+        } catch (error) {}
+      }
+      calculateBMI(60, 170);
+    </script>
+  </body>
+</html>
