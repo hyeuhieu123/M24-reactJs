@@ -1,20 +1,77 @@
 {
-  "users": [
+  "user": [
     {
       "id": 1,
-      "title": "Hello world",
-      "content": "a",
-      "thumbnail": "https://www.google.com/imgres?q=img&imgurl=https%3A%2F%2Fdynamic-media-cdn.tripadvisor.com%2Fmedia%2Fphoto-o%2F0f%2Fba%2F29%2F5c%2Fimg-worlds-of-adventure.jpg%3Fw%3D1200%26h%3D1200%26s%3D1&imgrefurl=https%3A%2F%2Fwww.tripadvisor.com.vn%2FAttraction_Review-g295424-d10687494-Reviews-IMG_Worlds_of_Adventure-Dubai_Emirate_of_Dubai.html&docid=PjxRncx6bsXMHM&tbnid=BHbOsHsYSl36gM&vet=12ahUKEwjE6I2K-ciGAxXhbGwGHU3dDBkQM3oECGMQAA..i&w=1200&h=1200&hcb=2&ved=2ahUKEwjE6I2K-ciGAxXhbGwGHU3dDBkQM3oECGMQAA",
-      "created_at": "6/7/2024",
-      "created_by": "hieu",
-      "comments": [
-        {
-          "id": 1,
-          "content": "hay",
-          "created_at": "01/01/2024",
-          "user_id": 2
-        }
-      ]
+      "name": "hieu",
+      "age": 20,
+      "email": "@gmail.com"
+    }
+  ],
+  "posts": [
+    {
+      "id": 1,
+      "title": "Exploring the Mountains",
+      "content": "A detailed guide on exploring the mountain ranges.",
+      "thumbnail": "mountains.jpg",
+      "created_at": "2024-01-01T10:00:00Z",
+      "created_by": "user1",
+      "comments": "[1, 2]"
+    },
+    {
+      "id": 2,
+      "title": "City Life",
+      "content": "An article discussing the pros and cons of city life.",
+      "thumbnail": "city.jpg",
+      "created_at": "2024-02-15T12:00:00Z",
+      "created_by": "user2",
+      "comments": "[]"
+    },
+    {
+      "id": 3,
+      "title": "The Art of Cooking",
+      "content": "Tips and tricks to enhance your cooking skills.",
+      "thumbnail": "cooking.jpg",
+      "created_at": "2024-03-05T09:30:00Z",
+      "created_by": "user3",
+      "comments": "[3]"
+    },
+    {
+      "id": 4,
+      "title": "Traveling the World",
+      "content": "Experiences and tips from a world traveler.",
+      "thumbnail": "travel.jpg",
+      "created_at": "2024-04-10T14:00:00Z",
+      "created_by": "user4",
+      "comments": "[]"
+    },
+    {
+      "id": 5,
+      "title": "Technology Trends",
+      "content": "A look into the latest trends in technology.",
+      "thumbnail": "tech.jpg",
+      "created_at": "2024-05-20T16:45:00Z",
+      "created_by": "user5",
+      "comments": "[4, 5]"
+    }
+  ],
+  "comment": [
+    {
+      "id": 1,
+      "content": "Great guide! Really helped me plan my trip.",
+      "created_at": "2024-01-02T11:00:00Z",
+      "created_by": "commenter1"
+    },
+    {
+      "id": 2,
+      "content": "I love mountains, thanks for sharing!",
+      "created_at": "2024-01-03T12:30:00Z",
+      "created_by": "commenter2"
+    },
+    {
+      "id": 3,
+      "content": "I tried the recipes, they are amazing!",
+      "created_at": "2024-03-06T10:00:00Z",
+      "created_by": "commenter3"
     }
   ]
 }
