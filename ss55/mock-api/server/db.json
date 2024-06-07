@@ -1,45 +1,20 @@
 {
-  "posts": [
+  "users": [
     {
       "id": 1,
-      "title": "Something interesting",
-      "content": "Something",
-      "thumbnail": "Uh huh",
-      "create_at": "2021-01-28T00:00:00+1:00",
-      "create_by": "me",
-      "comments": "[]"
-    },
-    {
-      "id": 2,
-      "title": "Something interesting2",
-      "content": "Something2",
-      "thumbnail": "Uh huh2",
-      "create_at": "2021-01-28T00:00:00+1:00",
-      "create_by": "sb",
-      "comments": "[]"
-    },
-    {
-      "title": "I'm new",
-      "thumbnail": "Oh Oh",
-      "create_at": "2024-04-04T00:00:00+1:00",
-      "comment": "[]",
-      "id": 4
-    },
-    {
-      "title": "I had updated",
-      "thumbnail": "haha",
-      "create_at": "2024-01025T00:00:00+1:00",
-      "create_by": "god",
-      "comments": "[]",
-      "id": 5
-    }
-  ],
-  "comments": [
-    {
-      "id": 1,
-      "body": "updated",
-      "create_at": "updated",
-      "create_by": "newone"
+      "title": "Hello world",
+      "content": "Tien dep trai",
+      "thumbnail": "https://www.google.com/imgres?q=img&imgurl=https%3A%2F%2Fdynamic-media-cdn.tripadvisor.com%2Fmedia%2Fphoto-o%2F0f%2Fba%2F29%2F5c%2Fimg-worlds-of-adventure.jpg%3Fw%3D1200%26h%3D1200%26s%3D1&imgrefurl=https%3A%2F%2Fwww.tripadvisor.com.vn%2FAttraction_Review-g295424-d10687494-Reviews-IMG_Worlds_of_Adventure-Dubai_Emirate_of_Dubai.html&docid=PjxRncx6bsXMHM&tbnid=BHbOsHsYSl36gM&vet=12ahUKEwjE6I2K-ciGAxXhbGwGHU3dDBkQM3oECGMQAA..i&w=1200&h=1200&hcb=2&ved=2ahUKEwjE6I2K-ciGAxXhbGwGHU3dDBkQM3oECGMQAA",
+      "created_at": "6/7/2024",
+      "created_by": "hieu",
+      "comments": [
+        {
+          "id": 1,
+          "content": "hay",
+          "created_at": "01/01/2024",
+          "user_id": 2
+        }
+      ]
     }
   ]
 }
