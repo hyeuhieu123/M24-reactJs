@@ -6,17 +6,14 @@
     <title>Document</title>
   </head>
   <body>
+    <!-- dùng để xử lý các tác vụ bất đồng bộ es7thay vì dùng promise thì
+    async-await giúp cho việc code gọn gàng hơn, nhanh gon hơnkhi 1 function
+    có từ khóa asyn await đặt trước thì function đấy sẽ trở thành promise -->
+
     <script>
-      setTimeout(() => {
-        console.log("viec 1");
-        //sau khi viec 1 lam xong thi viec 2 can ket qua viec 1
-        setTimeout(() => {
-          console.log("viec 2");
-          setTimeout(() => {
-            console.log("viec 3");
-          }, 1000);
-        }, 1000);
-      }, 1000);
+      async function async() {
+        new Promise((resolve, reject));
+      }
     </script>
   </body>
 </html>

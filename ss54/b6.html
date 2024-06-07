@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      async function isPrimeWithAsyncAwait(a) {
+        if (typeof a !== "number") {
+          throw new Error("Giá trị truyền vào phải là số");
+        }
+        if (a < 2) {
+          return false;
+        }
+        for (let i = 2; i <= Math.sqrt(a); i++) {
+          if (a % i === 0) {
+            return false;
+          }
+        }
+        return true;
+      }
+
+      (async () => {
+        try {
+          const isPrime2 = await isPrimeWithAsyncAwait(2);
+          console.log(`Số 2 có phải số nguyên tố? ${isPrime2}`);
+
+          const isPrime3 = await isPrimeWithAsyncAwait(3);
+          console.log(`Số 3 có phải số nguyên tố? ${isPrime3}`);
+
+          const isPrime4 = await isPrimeWithAsyncAwait(4);
+          console.log(`Số 4 có phải số nguyên tố? ${isPrime4}`);
+        } catch (err) {
+          console.log(err);
+        }
+      })();
+    </script>
+  </body>
+</html>
