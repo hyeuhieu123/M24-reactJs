@@ -1,0 +1,12 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "fullname": "nguyễn ",
+      "email": "@gmail",
+      "address": "Hà Nội",
+      "password": "$2a$10$Go6dgc/yx8IK2Z0T4VUrf.ct5NCQ/XOJDRE444Srpy9KAeUOY3Tn.",
+      "dayOfBirth": "0043-04-23"
+    }
+  ]
+}
