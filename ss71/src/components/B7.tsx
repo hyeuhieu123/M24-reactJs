@@ -32,4 +32,4 @@ const B7 = () => {
   );
 };
 
-export default BT07;
+export default B7;
