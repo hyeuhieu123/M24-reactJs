@@ -1,0 +1,78 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "productName": "handbag",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit",
+      "stock_quantity": 20,
+      "price": 30,
+      "image": "https://i.etsystatic.com/14042270/r/il/01490e/2232511263/il_fullxfull.2232511263_n0gn.jpg"
+    },
+    {
+      "id": 2,
+      "productName": "handbag",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit",
+      "stock_quantity": 20,
+      "price": 30,
+      "image": "https://image.msscdn.net/images/goods_img/20190306/973028/973028_1_500.jpg"
+    },
+    {
+      "id": 3,
+      "productName": "handbag",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit",
+      "stock_quantity": 20,
+      "price": 30,
+      "image": "https://www.net-a-porter.com/variants/images/1647597341515594/in/w920_a3-4_q80.jpg"
+    }
+  ],
+  "carts": [
+    {
+      "id": 1,
+      "product": {
+        "id": 1,
+        "productName": "handbagg",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit",
+        "stock_quantity": 20,
+        "price": 30,
+        "image": "https://www.net-a-porter.com/variants/images/1647597341515594/in/w920_a3-4_q80.jpg"
+      },
+      "quantity": 1
+    },
+    {
+      "id": 2,
+      "product": {
+        "id": 2,
+        "productName": "handbag",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit",
+        "stock_quantity": 20,
+        "price": 30,
+        "image": "https://image.msscdn.net/images/goods_img/20190306/973028/973028_1_500.jpg"
+      },
+      "quantity": 1
+    },
+    {
+      "id": 3,
+      "product": {
+        "id": 3,
+        "productName": " handbag",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit",
+        "stock_quantity": 20,
+        "price": 30,
+        "image": "https://www.net-a-porter.com/variants/images/1647597341515594/in/w920_a3-4_q80.jpg"
+      },
+      "quantity": 1
+    },
+    {
+      "id": 4,
+      "product": {
+        "id": 3,
+        "productName": "handbag",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit",
+        "stock_quantity": 20,
+        "price": 30,
+        "image": "https://www.net-a-porter.com/variants/images/1647597341515594/in/w920_a3-4_q80.jpg"
+      },
+      "quantity": 1
+    }
+  ]
+}
